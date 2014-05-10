@@ -21,7 +21,9 @@ block content
 		#message
 	.ping-pong
 		.ping
+			span PING
 		.pong
+			span PONG
 	.addHightScores
 		#add-message
 		form(method="post", action="#{getUrl('game.addHighscore')}", data-socket="true", rel="#add-message", redirect="#{getUrl('game.highscore')}")
