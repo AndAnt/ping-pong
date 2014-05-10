@@ -1,0 +1,155 @@
+.hide {
+	display: none;
+}
+
+.abs {
+	position: absolute;
+}
+
+.rel {
+	position: relative;
+}
+
+.block {
+	display: block;
+}
+
+.square(@size) {
+	width: @size;
+	height: @size;
+}
+
+.opaque(@amt) {
+	opacity: @amt;
+}
+
+#element_prototypes, .prototype {
+	.hide;
+}
+
+.middle {
+	.abs;
+	left: 50%;
+	top: 50%;
+}
+
+.preloader-wrap {
+	top: 0;
+	left: 0;
+}
+
+.preloader {
+	.middle;
+	.square(36px);
+	margin-left: -18px;
+	margin-top: -18px;
+	background: url('/images/preloader.gif') left top no-repeat;
+}
+
+.time {
+	margin-top: 50px;
+}
+
+.you, .opponent {
+	position: relative;
+	height: 25px;
+	margin: 10px;
+	border-radius: 10px;
+	overflow: hidden;
+}
+.you {
+	border: solid blue 1px;
+}
+.opponent {
+	border: solid orange 1px;
+}
+.progressbar {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	height: 100%;
+	opacity: 0.5;
+	width: 0%;
+}
+
+.opponent .progressbar {
+	background: orange;
+}
+
+.you .progressbar {
+	background: blue;
+}
+
+.time span {
+	color: #000000;
+	font-size: 20px;
+	left: 10px;
+	padding: 0;
+	position: absolute;
+	top: 0px;
+	z-index: 10;
+}
+
+.game-desdrition {
+	text-align: center;
+	margin-top: 25px;
+}
+#game-desdrition-header {
+	font-size: 25px;
+	color: blue;
+}
+#game-desdrition-body {
+	font-size: 25px;
+	color: black;
+}
+#message-box  {
+	text-align: center;
+	margin-top: 25px;
+}
+
+#message {
+	color: #F2CA26;
+	font-size: 30px;
+	font-weight: normal;
+	margin: 0 auto;
+	text-align: center;
+	width: 300px;
+}
+
+.ping-pong {
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    width: 140px;
+    height: 140px;
+    display: none;
+    z-index: 50;
+}
+.ping, .pong {
+	width: 140px;
+	height: 140px;
+	margin: 0 auto;
+	border-radius: 70px;
+	position: absolute;
+	top:0;
+	cursor: pointer;
+}
+.ping {
+	background: #2cc36b;
+}
+.pong {
+	background: #c0392b;
+}
+
+.win {
+	color: #00b393;
+}
+.lose {
+	color: #cf301b;
+}
+
+.addHightScores {
+	margin: 40px;
+	display: none;
+}

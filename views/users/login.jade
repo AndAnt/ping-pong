@@ -1,0 +1,14 @@
+extends ../layout
+block header
+	nav.segmented-control
+		a.control-item(href="#{getUrl('users.registration')}") Registration
+		a.control-item.active(href="#{getUrl('users.login')}") Login
+		a.control-item(href="/") Home
+		a.control-item(href="#{getUrl('game.highscore')}") Highscore
+block content
+	.card
+		#login-message
+		form(method="post", action="#{getUrl('users.login')}", data-socket="true", rel="#login-message", redirect="/")
+			input(type='text', placeholder='Username', name="username")
+			input(type='password', placeholder='Password', name="password")
+			button.btn.btn-positive.btn-block Sign In

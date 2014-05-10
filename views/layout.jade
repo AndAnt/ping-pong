@@ -1,0 +1,30 @@
+doctype html
+head
+    title= title || "Cretive Tour"
+    meta(name='viewport', content='initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui')
+    meta(name='apple-mobile-web-app-capable', content='yes')
+    meta(name='apple-mobile-web-app-status-bar-style', content='black')
+
+    //script(src="/js/sails.io.js")
+    // SCRIPTS
+    script(type="text/javascript", src="/bower_components/jquery/dist/jquery.js")
+    script(type="text/javascript", src="/linker/js/socket.io.js")
+    script(type="text/javascript", src="/linker/js/sails.io.js")
+    script(type="text/javascript", src="/linker/js/app.js")
+    script(type="text/javascript", src="/bower_components/lodash/dist/lodash.js")
+    script(type="text/javascript", src="/linker/js/helpers.js")
+    script(type="text/javascript", src="/linker/js/main.js")
+    // SCRIPTS END
+    // STYLES
+    link(rel="stylesheet", href="/bower_components/ratchet/dist/css/ratchet.css")
+    link(rel="stylesheet", href="/linker/styles/main.css")
+    // STYLES END
+body
+    header
+        block header
+    section
+        block content
+    include footer
+    #element_prototypes
+        .preloader-wrap.prototype.rel
+            .preloader

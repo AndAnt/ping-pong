@@ -1,0 +1,26 @@
+{
+  "name": "PingPong",
+  "version": "0.0.1",
+  "authors": [
+    "And <andantonyan@gmail.com>"
+  ],
+  "description": "Ping Pong",
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "assets/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "2.1.x",
+    "ratchet": "2.0.x",
+    "lodash": "2.4.x"
+  }
+}
